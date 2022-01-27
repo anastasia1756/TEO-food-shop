@@ -79,8 +79,7 @@ p {
 }
 
 /* Hero */
-.main {
-}
+
 .hero-section {
   padding-top: 82px;
   padding-bottom: 100px;
@@ -104,6 +103,8 @@ p {
   font-weight: 100;
   text-align: center;
   font-size: 30px;
+  background-color: var(--secondary-text-color);
+  border-color: 1px solid grey;
 }
 
 .timer > div {
@@ -130,8 +131,9 @@ p {
 
 /* Slider */
 .slider-section {
-  background-image: url(../images/splash.png), url(../images/bg-slider.png);
-  background-position: 700px 600px, 0 45px;
+  background-image: url(../images/splash.png), url(../images/bg-slider.png),
+    url(../images/slider-wrapper.jpeg);
+  background-position: 700px 600px, 0 45px, bottom;
   background-repeat: no-repeat;
 }
 .slider {
@@ -418,15 +420,12 @@ p {
   top: 42%;
   background-image: url(../images/pineapple.jpeg), url(../images/modal-bg.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 498px 348px, contain;
   border-radius: 10px;
   padding: 68px 209px 68px 59px;
 }
 .image__modal {
-  /* width: 498px;
-  height: 348px; */
   padding: 15px 14px;
-  /* background-image: url(../images/pineapple.jpeg); */
   background-repeat: no-repeat;
   background-size: 498px 348px, contain;
   width: 100%;
@@ -457,4 +456,10 @@ p {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+/* Adaptive */
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
 }
