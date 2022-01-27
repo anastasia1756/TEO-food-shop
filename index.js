@@ -40,6 +40,7 @@ let path = anime.path(".motion-path-demo path");
 anime({
   targets: ".motion-path-demo .el",
   translateX: path("x"),
+
   translateX: 1400,
   easing: "linear",
   duration: 3000,

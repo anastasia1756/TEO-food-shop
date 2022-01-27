@@ -274,6 +274,11 @@ p {
   font-size: 48px;
   color: var(--acent-color);
 }
+.table-container {
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
 .table {
   margin: 0 auto;
   margin-bottom: 40px;
@@ -422,8 +427,8 @@ p {
   max-width: 526px;
   height: 378px;
   position: absolute;
-  left: 39%;
-  top: 42%;
+  left: 32%;
+  top: 25%;
   background-image: url(../images/pineapple.jpeg), url(../images/modal-bg.png);
   background-repeat: no-repeat;
   background-size: 498px 348px, contain;
@@ -468,6 +473,7 @@ p {
 @media screen and (max-width: 1290px) {
   .swiper-button-next {
     right: 20%;
+    top: 47%;
   }
   .swiper-button-prev {
     left: 20%;
@@ -488,9 +494,14 @@ p {
   .contacts-section {
     height: 860px;
   }
-
+  .table-section {
+    padding-top: 0;
+  }
   .contact-wrapper {
     padding: 140px 145px;
+  }
+  .modal {
+    left: 30%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -524,6 +535,18 @@ p {
   .contact-wrapper {
     padding: 60px 65px;
   }
+  .table-section {
+    padding: 40px 20px;
+  }
+  .table__item-bold {
+    padding: 10px 0;
+  }
+  .footer__container {
+    padding: 54px 70px 72px 70px;
+  }
+  .modal {
+    left: 26%;
+  }
 }
 @media screen and (max-width: 768px) {
   .header__container {
@@ -540,5 +563,8 @@ p {
   .slider__image {
     width: 330px;
     height: 330px;
+  }
+  .modal {
+    left: 17%;
   }
 }
