@@ -377,3 +377,58 @@ p {
   display: block;
   margin-bottom: 8px;
 }
+
+/* Swiper */
+.swiper-button-prev {
+  z-index: 10;
+  position: absolute;
+  top: 45%;
+  left: 23%;
+  width: 65px;
+  height: 65px;
+}
+.swiper-button-next {
+  z-index: 10;
+  position: absolute;
+  top: 45%;
+  right: 23%;
+  width: 65px;
+  height: 65px;
+  fill: var(--secondary-text-color);
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  fill: var(--acent-color);
+}
+.swiper-slide {
+  position: relative;
+}
+/* .swiper {
+  width: 100%;
+  height: 100%;
+} */
+
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+} */
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */ ;
