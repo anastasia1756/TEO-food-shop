@@ -386,6 +386,10 @@ p {
   left: 23%;
   width: 65px;
   height: 65px;
+  fill: var(--acent-color);
+}
+.bg-icon {
+  fill: var(--secondary-text-color);
 }
 .swiper-button-next {
   z-index: 10;
@@ -394,41 +398,63 @@ p {
   right: 23%;
   width: 65px;
   height: 65px;
-  fill: var(--secondary-text-color);
-}
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
   fill: var(--acent-color);
+}
+.bg-icon:hover,
+.bg-icon:focus {
+  fill: #aaeff9;
 }
 .swiper-slide {
   position: relative;
 }
-/* .swiper {
+
+/* Modal */
+.modal {
+  z-index: 9;
+  max-width: 526px;
+  height: 378px;
+  position: absolute;
+  left: 39%;
+  top: 42%;
+  background-image: url(../images/pineapple.jpeg), url(../images/modal-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+  padding: 68px 209px 68px 59px;
+}
+.image__modal {
+  /* width: 498px;
+  height: 348px; */
+  padding: 15px 14px;
+  /* background-image: url(../images/pineapple.jpeg); */
+  background-repeat: no-repeat;
+  background-size: 498px 348px, contain;
   width: 100%;
   height: 100%;
-} */
-
-/* .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-} */
-
-/* .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */ ;
+}
+.close-button {
+  position: absolute;
+  top: -18px;
+  right: -26px;
+}
+.madal__text {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--acent-color);
+}
+.modal__text-dark {
+  color: var(--main-text-color);
+}
+.modal__btn {
+  width: 92px;
+  height: 50px;
+  background-color: var(--acent-color);
+  color: var(--secondary-text-color);
+  border-radius: 10px;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

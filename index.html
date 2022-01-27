@@ -107,10 +107,12 @@
               
             </div>
             <div >
-              <img class="swiper-button-next" src="./images/svg/right.svg" alt="">
+              <svg class="swiper-button-next" width="65" height="65" xmlns="http://www.w3.org/2000/svg"><g><g class="bg-icon" transform="translate(32.5 32.5)"><filter id="a" y="-51%" height="202%" x="-35%" width="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="5"/><feOffset dy="10" result="oBlur"/><feFlood flood-color="#000" flood-opacity=".102"/><feComposite in2="oBlur" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter><path transform="translate(-32.5 -32.5)" d="M0 32.5C0 50.45 14.55 65 32.5 65S65 50.45 65 32.5 50.45 0 32.5 0 0 14.55 0 32.5z" fill-rule="evenodd" filter="url(#a)"/></g><path d="M34.648 23.281l7.646-7.646a2.938 2.938 0 0 0 0-4.163l-7.646-7.646c-1.687-1.687-4.469-.75-4.97 1.401a3.06 3.06 0 0 0-.078.695l4 7.504-4 7.789c-.005.576.161 1.14.478 1.621.845 1.27 2.641 1.748 4.027.88.197-.124.38-.27.543-.435z" fill-rule="evenodd"/></g></svg>
+              <!-- <img class="swiper-button-next" src="./images/svg/right.svg" alt=""> -->
               </div>
             <div >
-              <img class="swiper-button-prev" src="./images/svg/left.svg" alt="">
+              <svg class="swiper-button-prev" width="65" height="65" xmlns="http://www.w3.org/2000/svg"><g><g class="bg-icon" transform="translate(32.5 32.5)"><filter id="a" y="-51%" height="202%" x="-35%" width="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="5"/><feOffset dy="10" result="oBlur"/><feFlood flood-color="#000" flood-opacity=".102"/><feComposite in2="oBlur" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter><path transform="translate(-32.5 -32.5)" d="M0 32.5C0 50.45 14.55 65 32.5 65S65 50.45 65 32.5 50.45 0 32.5 0 0 14.55 0 32.5z" fill-rule="evenodd" filter="url(#a)"/></g><path d="M34.53 41.695l-7.647-7.646a2.94 2.94 0 0 1 0-4.163l7.647-7.646c.241-.244.523-.444.833-.592 1.647-.783 3.712.169 4.136 1.993.053.228.08.461.079.695l-4 7.504 4 7.788a2.897 2.897 0 0 1-.479 1.622c-.844 1.27-2.64 1.747-4.026.879a3.084 3.084 0 0 1-.543-.434z" fill-rule="evenodd"/></g></svg>
+              <!-- <img class="swiper-button-prev" src="./images/svg/left.svg" alt=""> -->
             </div>
           </div>
           
@@ -327,6 +329,16 @@
       </div>
     </div>
     </footer>
+
+    <div class="modal is-hidden" data-modal>
+      <div class="image__modal">
+        <div class="close-button" data-modal-close>
+          <svg width="65" height="65" xmlns="http://www.w3.org/2000/svg"><g><g transform="translate(32.5 32.5)"><filter id="a" y="-51%" height="202%" x="-35%" width="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="5"/><feOffset dy="10" result="oBlur"/><feFlood flood-color="#000" flood-opacity=".102"/><feComposite in2="oBlur" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter><path transform="translate(-32.5 -32.5)" d="M0 32.5C0 50.45 14.55 65 32.5 65S65 50.45 65 32.5 50.45 0 32.5 0 0 14.55 0 32.5z" fill="#fff" fill-rule="evenodd" filter="url(#a)"/></g><path d="M41.737 43.358l-8.952-9.013-8.953 9.013a1.648 1.648 0 0 1-2.346 0 1.675 1.675 0 0 1 0-2.361l9.012-9.074-9.012-9.072a1.675 1.675 0 0 1 0-2.362 1.651 1.651 0 0 1 2.346 0l8.953 9.012 8.952-9.012a1.648 1.648 0 0 1 2.346 0 1.676 1.676 0 0 1 0 2.362l-9.012 9.072 9.012 9.073a1.676 1.676 0 0 1 0 2.361 1.647 1.647 0 0 1-2.346 0z" fill="#0a99ab" fill-rule="evenodd"/></g></svg>
+        </div>
+        <h2 class="madal__text">Voyez ce jeu <span class="modal__text-dark"> exquis wallon.</span></h2>
+        <button class="modal__btn" type="submit">OK</button>
+      </div>
+    </div>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
