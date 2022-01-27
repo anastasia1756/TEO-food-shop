@@ -211,10 +211,10 @@
           <form id="sheetdb-form" method="POST" 
           action="https://sheetdb.io/api/v1/mk8rgqm3yqja1" class="form" autocomplete="on">
             <label class="form__name">
-              <input name="data[email]" class="form__input" placeholder="Email" required />
+              <input name="data[email]" type="email" class="form__input" placeholder="Email" required />
             </label>
             <label class="form__name">
-              <input name="data[phone]" class="form__input" placeholder="Mobile phone" required/>
+              <input name="data[phone]" type="tel" class="form__input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="093-111-2233" placeholder="Mobile phone" required/>
             </label>
             <div class="checkbox__wrapper">
               <input class="form__checkbox"type="checkbox" name="privacy" value="privacy" required />
