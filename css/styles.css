@@ -176,6 +176,8 @@ p {
 .products__image {
   margin-left: -125px;
   margin-top: 80px;
+  width: 736px;
+  height: 737px;
 }
 .products__wrapper {
   margin-top: 210px;
@@ -479,6 +481,10 @@ p {
     width: 630px;
     height: 381px;
   }
+  .products__wrapper {
+    margin-top: 150px;
+    margin-left: 80px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .header__container {
@@ -493,6 +499,17 @@ p {
   .slider__image {
     width: 350px;
     height: 350px;
+  }
+  .products__image {
+    width: 556px;
+    height: 510px;
+  }
+  .products__wrapper {
+    margin-top: 85px;
+    margin-left: 30px;
+  }
+  .slider-text__wrapper {
+    padding: 0 10px;
   }
 }
 @media screen and (max-width: 768px) {
