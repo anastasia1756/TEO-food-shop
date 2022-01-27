@@ -351,7 +351,7 @@ p {
 .logo__footer:hover {
   fill: var(--acent-color);
 }
-.social-icons:not(:last-child) {
+.social-icons__link:not(:last-child) {
   margin-right: 16px;
 }
 .social-icons__link {
@@ -375,7 +375,7 @@ p {
 }
 .footer_item {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 /* Swiper */

@@ -25,9 +25,23 @@ let popModalTimer = setInterval(() => {
   const refs = {
     closeModalBtn: document.querySelector("[data-modal-close]"),
     modal: document.querySelector("[data-modal]"),
+    okBtn: document.querySelector(".modal__btn"),
   };
-
-  refs.closeModalBtn.addEventListener("click", () => {
+  const hideModal = () => {
     refs.modal.classList.add("is-hidden");
-  });
+  };
+  refs.closeModalBtn.addEventListener("click", hideModal);
+  refs.okBtn.addEventListener("click", hideModal);
 })();
+
+// Animation
+
+let path = anime.path(".motion-path-demo path");
+anime({
+  targets: ".motion-path-demo .el",
+  translateX: path("x"),
+  translateX: 1400,
+  easing: "linear",
+  duration: 3000,
+  loop: true,
+});
