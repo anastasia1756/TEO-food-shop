@@ -206,13 +206,13 @@ p {
 
 /* Contacts */
 .contacts-section {
-  /* padding-top: 160px;
-  padding-bottom: 160px; */
-  padding: 160px 165px;
   background-image: url(../images/teeth.png), url(../images/contacts-image.jpeg);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 955px;
+  height: 981px;
+}
+.contact-wrapper {
+  padding: 160px 165px;
 }
 .contacts__title {
   margin-bottom: 60px;
@@ -485,6 +485,13 @@ p {
     margin-top: 150px;
     margin-left: 80px;
   }
+  .contacts-section {
+    height: 860px;
+  }
+
+  .contact-wrapper {
+    padding: 140px 145px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .header__container {
@@ -510,6 +517,12 @@ p {
   }
   .slider-text__wrapper {
     padding: 0 10px;
+  }
+  .contacts-section {
+    max-height: 676px;
+  }
+  .contact-wrapper {
+    padding: 60px 65px;
   }
 }
 @media screen and (max-width: 768px) {
