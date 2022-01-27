@@ -218,12 +218,13 @@
         <div class="contacts-section">
           
           <h2 class="contacts__title">Contact us</h2>
-          <form class="form" autocomplete="on">
+          <form id="sheetdb-form" method="POST" 
+          action="https://sheetdb.io/api/v1/mk8rgqm3yqja1" class="form" autocomplete="on">
             <label class="form__name">
-              <input type="text" class="form__input" placeholder="Email" required />
+              <input name="data[email]" class="form__input" placeholder="Email" required />
             </label>
             <label class="form__name">
-              <input type="text" class="form__input" placeholder="Mobile phone" required/>
+              <input name="data[phone]" class="form__input" placeholder="Mobile phone" required/>
             </label>
             <div class="checkbox__wrapper">
               <input class="form__checkbox"type="checkbox" name="privacy" value="privacy" required />
@@ -343,10 +344,8 @@
     </div>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <!-- <script src="anime.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    
     <script src="./index.js"></script>
 </body>
 </html>

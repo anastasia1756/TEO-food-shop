@@ -45,3 +45,47 @@ anime({
   duration: 3000,
   loop: true,
 });
+
+// Post form
+// window.addEventListener("click", function () {
+//   // function doGet(e) {
+//   //   writeToGoogleSpreadsheet(e.parameter);
+//   // }
+//   // function writeToGoogleSpreadsheet(params) {
+//   //   var spreadsheet = SpreadsheetApp.openById("id_of_my_google_spreadsheet");
+//   //   var sheetData = spreadsheet.getSheetByName("Data");
+//   //   sheetData.appendRow([
+//   //     params.monitorURL,
+//   //     params.alertType,
+//   //     params.alertDetails,
+//   //   ]);
+//   // }
+
+//   const form = document.querySelector(".form");
+//   form.addEventListener("submit", function (e) {
+//     e.preventDefault();
+//     const data = new FormData(form);
+//     const action = e.target.action;
+//     fetch(action, {
+//       method: "POST",
+//       body: data,
+//     }).then(() => {
+//       alert("Success!");
+//     });
+//   });
+// });
+let form = document.getElementById("sheetdb-form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(document.getElementById("sheetdb-form")),
+  })
+    .then((response) => response.json())
+    .then((html) => {
+      // you can put any JS code here
+      alert("success");
+      form.reset();
+    });
+});
