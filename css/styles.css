@@ -414,8 +414,9 @@ p {
   max-width: 526px;
   height: 378px;
   position: absolute;
-  left: 32%;
-  top: 25%;
+  left: 38%;
+  top: 39%;
+
   background-image: url(../images/pineapple.jpeg), url(../images/modal-bg.png);
   background-repeat: no-repeat;
   background-size: 498px 348px, contain;
@@ -455,7 +456,14 @@ p {
   visibility: hidden;
   pointer-events: none;
 }
-
+.table__btn:disabled {
+  background-color: rgba(202, 202, 202, 0.747);
+}
+.table__btn:disabled:hover {
+  background-color: rgba(202, 202, 202, 0.747);
+  color: var(--secondary-text-color);
+  border: rgba(202, 202, 202, 0.747);
+}
 /* Adaptive */
 @media screen and (max-width: 1290px) {
   .swiper-button-next {
@@ -488,7 +496,8 @@ p {
     padding: 140px 145px;
   }
   .modal {
-    left: 30%;
+    left: 32%;
+    top: 25%;
   }
 }
 @media screen and (max-width: 1024px) {
