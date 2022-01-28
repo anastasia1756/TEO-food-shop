@@ -505,6 +505,9 @@ p {
   .header__container {
     padding: 0px 80px;
   }
+  .nav__item {
+    margin-right: 20px;
+  }
   .swiper-button-next {
     right: 12%;
   }
@@ -549,9 +552,7 @@ p {
   .header__container {
     padding: 0px 40px;
   }
-  .nav__item {
-    margin-right: 20px;
-  }
+
   .slider__wrapper {
     padding: 0 20px;
     margin-top: 90px;
